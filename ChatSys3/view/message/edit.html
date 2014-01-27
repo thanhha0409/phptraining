@@ -1,0 +1,9 @@
+<h1>Edit message</h1>
+<p> Hello: <?php echo Session::get('login_user'). " (".$this->HtmlHlp->a('/user/logout',"Logout").")"; ?> </p>
+<p>Update content of message</p>
+<?php
+        echo $this->FormHlp->start('/message/edit/'.Session::get('msgid'));
+        echo $this->FormHlp->input('message',array('value'=>Session::get('content')))."<br/>";
+        echo $this->FormHlp->button('Edit');
+        echo $this->FormHlp->end();
+?>

@@ -1,0 +1,37 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+	RewriteRule (^|/)(\..*) - [F]
+	RewriteRule ^css/[0-9]+/(.+?\.css)$ /css/$1 [L]
+	RewriteRule ^js/[0-9]+/(.+?\.js)$ /js/$1 [L]	
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php?_url=$1 [QSA,L]
+</IfModule>
+
+#ExpiresActive On
+#ExpiresByType application/x-shockwave-flash "access plus 3 days"
+#ExpiresByType image/png "access plus 3 days"
+#ExpiresByType image/gif "access plus 3 days"
+#ExpiresByType image/jpg "access plus 3 days"
+#ExpiresByType image/jpeg "access plus 3 days"
+#ExpiresByType application/x-javascript "access plus 3 days"
+#ExpiresByType text/css "access plus 3 days"
+#ExpiresByType text/xml "access plus 3 days"
+
+#FileETag none
+
+#AddOutputFilterByType DEFLATE application/x-shockwave-flash
+#AddOutputFilterByType DEFLATE image/png
+#AddOutputFilterByType DEFLATE image/gif
+#AddOutputFilterByType DEFLATE image/jpg
+#AddOutputFilterByType DEFLATE image/jpeg
+#AddOutputFilterByType DEFLATE text/css
+#AddOutputFilterByType DEFLATE application/x-javascript
+#AddOutputFilterByType DEFLATE text/xml
+
+#AuthUserFile /var/www/m1.bakatest.jp/htdocs/.htpasswd
+#AuthGroupFile /dev/null
+#AuthName "bakatest"
+#AuthType Basic
+#require valid-user

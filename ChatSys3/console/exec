@@ -1,0 +1,7 @@
+#!/usr/bin/env php
+
+<?php
+chdir(dirname(__FILE__));
+define('CONSOLE', 1);
+require_once('../config/base.cnf.php');
+require_once(HASUNOHA_DIR.'/core/hasunoha_console.php');

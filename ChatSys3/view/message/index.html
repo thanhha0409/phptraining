@@ -1,0 +1,44 @@
+<h1> Messages of thread <?php echo Session::get('threadid')?> </h1>
+<p> Hello: <?php echo Session::get('login_user'). " (".$this->HtmlHlp->a('/user/logout',"Logout").")"; ?> </p>
+
+<div style="width:900px;height:350px;line-height:2em;overflow:scroll;padding:5px;background-color:#FCFADD;color:#714D03;border:1px double #DEBB07;">
+
+<?php 
+
+foreach ($messages as $message){
+
+    // Display name and chat time
+    echo $message['username']." ( ".$message['created'].")";
+    if($message['deleteFlg']==0)
+    {
+         
+        if($message['userid'] ){
+            // Add link Edit 
+            echo " (". $this->HtmlHlp->a('/message/edit/'.$message['id'],'edit')."|";
+      
+            // Add link Delete
+           echo $this->HtmlHlp->a('/message/delete/'.$message['id'],'delete').")";
+        }
+   
+        // Display message
+        echo ": ".$message['message'];
+        if($message['created']!=$message['modified']){
+            echo " (edit at ".$message['modified'].")";
+        }
+    }else{
+        echo ": This message has been removed at ".$message['modified']; 
+    }
+
+    // End line
+    echo "<br/>";
+
+}
+?>
+</div>
+<?php
+    // Add link
+    echo "<br/>";
+    echo $this->HtmlHlp->a('/message/add',"Add new message")."<br/>";
+    echo $this->HtmlHlp->a('/thread/index',"Return to thread list")."<br/><br/>";
+?>
+

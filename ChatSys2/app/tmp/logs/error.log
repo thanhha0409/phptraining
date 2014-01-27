@@ -1,0 +1,1678 @@
+2014-01-17 02:10:52 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 02:11:37 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /Businesses
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Model/ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 /var/www/html/cakephp/lib/Cake/Model/Model.php(3474): ConnectionManager::getDataSource('default')
+#2 /var/www/html/cakephp/lib/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#3 /var/www/html/cakephp/lib/Cake/Model/Model.php(3496): Model->setSource('businesses')
+#4 /var/www/html/cakephp/lib/Cake/Model/Model.php(2900): Model->getDataSource()
+#5 /var/www/html/cakephp/lib/Cake/Model/Model.php(2872): Model->_readDataSource('all', Array)
+#6 /var/www/html/cakephp/app/Controller/BusinessesController.php(17): Model->find('all')
+#7 [internal function]: BusinessesController->index()
+#8 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BusinessesController), Array)
+#9 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(BusinessesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-17 02:15:24 Error: [MissingControllerException] Controller class ChatsiteController could not be found.
+Exception Attributes: array (
+  'class' => 'ChatsiteController',
+  'plugin' => NULL,
+)
+Request URL: /chatsite/
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 02:29:32 Error: [MissingViewException] View file "/var/www/html/cakephp/app/View/Businesses/business.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakephp/app/View/Businesses/business.ctp',
+)
+Request URL: /cakephp/Businesses/index/2/Commercial%20Bank%20Plc
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/View/View.php(457): View->_getViewFileName('Business')
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(952): View->render('Business', NULL)
+#2 /var/www/html/cakephp/app/Controller/BusinessesController.php(13): Controller->render('Business')
+#3 [internal function]: BusinessesController->index('2', 'Commercial Bank...')
+#4 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BusinessesController), Array)
+#5 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(BusinessesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-01-17 02:29:56 Error: [MissingViewException] View file "/var/www/html/cakephp/app/View/Businesses/business.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakephp/app/View/Businesses/business.ctp',
+)
+Request URL: /cakephp/Businesses/index/2/Commercial%20Bank%20Plc
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/View/View.php(457): View->_getViewFileName('Business')
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(952): View->render('Business', NULL)
+#2 /var/www/html/cakephp/app/Controller/BusinessesController.php(13): Controller->render('Business')
+#3 [internal function]: BusinessesController->index('2', 'Commercial Bank...')
+#4 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BusinessesController), Array)
+#5 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(BusinessesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-01-17 02:33:54 Error: [MissingActionException] Action BusinessesController::Businesses() could not be found.
+Exception Attributes: array (
+  'controller' => 'BusinessesController',
+  'action' => 'Businesses',
+)
+Request URL: /cakephp/Businesses/Businesses/index/3/Sampath%20Bank%20Plc
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(BusinessesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-17 02:34:25 Error: [MissingActionException] Action BusinessesController::Businesses() could not be found.
+Exception Attributes: array (
+  'controller' => 'BusinessesController',
+  'action' => 'Businesses',
+)
+Request URL: /cakephp/Businesses/Businesses/index/2/Commercial%20Bank%20Plc
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(BusinessesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-17 03:28:03 Error: [MissingViewException] View file "/var/www/html/cakephp/app/View/Businesses/business.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakephp/app/View/Businesses/business.ctp',
+)
+Request URL: /cakephp/Businesses/index/2/Commercial%20Bank%20Plc
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/View/View.php(457): View->_getViewFileName('Business')
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(952): View->render('Business', NULL)
+#2 /var/www/html/cakephp/app/Controller/BusinessesController.php(13): Controller->render('Business')
+#3 [internal function]: BusinessesController->index('2', 'Commercial Bank...')
+#4 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BusinessesController), Array)
+#5 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(BusinessesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-01-17 03:44:53 Error: [MissingControllerException] Controller class EmailsController could not be found.
+Exception Attributes: array (
+  'class' => 'EmailsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Emails
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 03:44:59 Error: [MissingControllerException] Controller class EmailsController could not be found.
+Exception Attributes: array (
+  'class' => 'EmailsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Emails/html
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 04:24:36 Error: [MissingControllerException] Controller class ChatController could not be found.
+Exception Attributes: array (
+  'class' => 'ChatController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Chat
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 04:24:39 Error: [MissingControllerException] Controller class ChatController could not be found.
+Exception Attributes: array (
+  'class' => 'ChatController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Chat
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 04:27:45 Error: Fatal Error (4): syntax error, unexpected T_OBJECT_OPERATOR in [/var/www/html/cakephp/app/Controller/ChatController.php, line 17]
+2014-01-17 04:27:45 Error: [FatalErrorException] syntax error, unexpected T_OBJECT_OPERATOR
+Request URL: /cakephp/Chat
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 17, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 17, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-17 04:29:02 Error: [MissingActionException] Action ChatController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ChatController',
+  'action' => 'index',
+)
+Request URL: /cakephp/Chat
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ChatController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-17 04:29:38 Error: Fatal Error (64): Cannot redeclare class ChatModel in [/var/www/html/cakephp/app/Model/Chat.php, line 6]
+2014-01-17 04:29:38 Error: [FatalErrorException] Cannot redeclare class ChatModel
+Request URL: /cakephp/Chat
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/c...', 6)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/c...', 6, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/c...', 6, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-17 04:31:42 Error: Fatal Error (64): Cannot redeclare class ChatModel in [/var/www/html/cakephp/app/Model/Chat.php, line 6]
+2014-01-17 04:31:42 Error: [FatalErrorException] Cannot redeclare class ChatModel
+Request URL: /cakephp/Chat
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/c...', 6)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/c...', 6, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/c...', 6, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-17 04:44:34 Error: [MissingControllerException] Controller class ChatController could not be found.
+Exception Attributes: array (
+  'class' => 'ChatController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Chat
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 04:46:25 Error: [MissingControllerException] Controller class ChatController could not be found.
+Exception Attributes: array (
+  'class' => 'ChatController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Chat
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 04:46:29 Error: Fatal Error (64): Cannot redeclare class ChatModel in [/var/www/html/cakephp/app/Model/Chat.php, line 6]
+2014-01-17 04:46:29 Error: [FatalErrorException] Cannot redeclare class ChatModel
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/c...', 6)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/c...', 6, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/c...', 6, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-17 06:22:09 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/html/cakephp/app/View/Chats/index.ctp, line 7]
+2014-01-17 06:22:09 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 7, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 7, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-17 06:47:56 Error: [MissingControllerException] Controller class Style.cssController could not be found.
+Exception Attributes: array (
+  'class' => 'Style.cssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/style.css
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 06:48:33 Error: [MissingControllerException] Controller class ChatController could not be found.
+Exception Attributes: array (
+  'class' => 'ChatController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Chat
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 06:48:37 Error: [MissingControllerException] Controller class Style.cssController could not be found.
+Exception Attributes: array (
+  'class' => 'Style.cssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/style.css
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 06:50:09 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/html/cakephp/app/View/Chats/index.ctp, line 37]
+2014-01-17 06:50:09 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 37, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 37, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-17 06:50:29 Error: [MissingControllerException] Controller class Style.cssController could not be found.
+Exception Attributes: array (
+  'class' => 'Style.cssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/style.css
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 06:51:23 Error: [MissingControllerException] Controller class Style.cssController could not be found.
+Exception Attributes: array (
+  'class' => 'Style.cssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/style.css
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 06:52:29 Error: [MissingControllerException] Controller class Style.cssController could not be found.
+Exception Attributes: array (
+  'class' => 'Style.cssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/style.css
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 06:59:38 Error: [MissingControllerException] Controller class Style.cssController could not be found.
+Exception Attributes: array (
+  'class' => 'Style.cssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/style.css
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 06:59:41 Error: [MissingControllerException] Controller class Style.cssController could not be found.
+Exception Attributes: array (
+  'class' => 'Style.cssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/style.css
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 07:02:23 Error: [MissingControllerException] Controller class Chat.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Chat.phpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/chat.php
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 07:08:02 Error: [MissingControllerException] Controller class Chat.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Chat.phpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/chat.php
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 07:25:30 Error: [MissingControllerException] Controller class Chat.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Chat.phpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/chat.php
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 08:17:18 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/html/cakephp/app/View/Chats/index.ctp, line 27]
+2014-01-17 08:17:18 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 27, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 27, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-17 08:20:09 Error: [MissingControllerException] Controller class Chat.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Chat.phpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/chat.php
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 08:20:48 Error: [MissingControllerException] Controller class Chat.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Chat.phpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/chat.php
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-17 08:26:53 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/html/cakephp/app/View/Chats/index.ctp, line 32]
+2014-01-17 08:26:53 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 32, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 32, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-17 08:27:32 Error: Fatal Error (1): Call to a member function input() on a non-object in [/var/www/html/cakephp/app/View/Chats/index.ctp, line 33]
+2014-01-17 08:27:32 Error: [FatalErrorException] Call to a member function input() on a non-object
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 33)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 33, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 33, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-17 08:39:14 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/cakephp/app/View/Chats/index.ctp, line 27]
+2014-01-17 08:39:14 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 27, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 27, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-17 08:48:54 Error: Fatal Error (4): syntax error, unexpected T_ECHO in [/var/www/html/cakephp/app/View/Chats/index.ctp, line 31]
+2014-01-17 08:48:54 Error: [FatalErrorException] syntax error, unexpected T_ECHO
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 31, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 31, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-17 09:14:29 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/html/cakephp/app/View/Chats/index.ctp, line 26]
+2014-01-17 09:14:29 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 26, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 26, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 03:27:00 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/html/cakephp/app/Controller/ChatsController.php, line 23]
+2014-01-20 03:27:00 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 23, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 23, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 03:27:21 Error: [MissingControllerException] Controller class ChatController could not be found.
+Exception Attributes: array (
+  'class' => 'ChatController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Chat
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-20 03:27:28 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/html/cakephp/app/Controller/ChatsController.php, line 23]
+2014-01-20 03:27:28 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 23, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 23, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 03:29:43 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/html/cakephp/app/Controller/ChatsController.php, line 23]
+2014-01-20 03:29:43 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 23, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 23, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 03:30:21 Error: Fatal Error (1): Call to undefined method App::user() in [/var/www/html/cakephp/app/Model/Chat.php, line 2]
+2014-01-20 03:30:21 Error: [FatalErrorException] Call to undefined method App::user()
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/c...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 03:31:22 Error: Fatal Error (1): Call to undefined function chat() in [/var/www/html/cakephp/app/Model/Chat.php, line 2]
+2014-01-20 03:31:22 Error: [FatalErrorException] Call to undefined function chat()
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/c...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 03:31:24 Error: Fatal Error (1): Call to undefined function chat() in [/var/www/html/cakephp/app/Model/Chat.php, line 2]
+2014-01-20 03:31:24 Error: [FatalErrorException] Call to undefined function chat()
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/c...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 03:31:48 Error: Fatal Error (1): Call to undefined function login() in [/var/www/html/cakephp/app/Model/Chat.php, line 2]
+2014-01-20 03:31:48 Error: [FatalErrorException] Call to undefined function login()
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/c...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 03:33:08 Error: Fatal Error (64): Cannot redeclare ChatsController::beforeFilter() in [/var/www/html/cakephp/app/Controller/ChatsController.php, line 40]
+2014-01-20 03:33:08 Error: [FatalErrorException] Cannot redeclare ChatsController::beforeFilter()
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/c...', 40)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/c...', 40, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/c...', 40, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 03:53:35 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/html/cakephp/app/Controller/UsersController.php, line 6]
+2014-01-20 03:53:35 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cakephp/users
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 6, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 6, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 03:53:40 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/html/cakephp/app/Controller/UsersController.php, line 6]
+2014-01-20 03:53:40 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cakephp/Users
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 6, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 6, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 03:55:42 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/html/cakephp/app/Controller/UsersController.php, line 6]
+2014-01-20 03:55:42 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cakephp/Users
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 6, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 6, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 03:56:15 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_FUNCTION in [/var/www/html/cakephp/app/Model/User.php, line 20]
+2014-01-20 03:56:15 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_FUNCTION
+Request URL: /cakephp/Users
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 20, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 20, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 03:57:42 Error: [MissingViewException] View file "/var/www/html/cakephp/app/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakephp/app/View/Users/index.ctp',
+)
+Request URL: /cakephp/Users
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 04:02:37 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakephp/Users/login
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-20 04:13:58 Error: Fatal Error (1): Call to a member function login() on a non-object in [/var/www/html/cakephp/app/Controller/UsersController.php, line 11]
+2014-01-20 04:13:58 Error: [FatalErrorException] Call to a member function login() on a non-object
+Request URL: /cakephp/Users/login
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 11, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 11, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 04:14:42 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/html/cakephp/app/Controller/UsersController.php, line 6]
+2014-01-20 04:14:42 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cakephp/Users/login
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 6, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 6, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 04:33:06 Error: Fatal Error (64): Cannot redeclare ChatsController::beforeFilter() in [/var/www/html/cakephp/app/Controller/ChatsController.php, line 40]
+2014-01-20 04:33:06 Error: [FatalErrorException] Cannot redeclare ChatsController::beforeFilter()
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/c...', 40)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/c...', 40, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/c...', 40, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 04:35:40 Error: Fatal Error (1): Call to undefined function login() in [/var/www/html/cakephp/app/Model/Chat.php, line 2]
+2014-01-20 04:35:40 Error: [FatalErrorException] Call to undefined function login()
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/c...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 04:35:49 Error: Fatal Error (1): Call to undefined function login() in [/var/www/html/cakephp/app/Model/Chat.php, line 2]
+2014-01-20 04:35:49 Error: [FatalErrorException] Call to undefined function login()
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/c...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 04:37:14 Error: Fatal Error (1): Call to undefined function login() in [/var/www/html/cakephp/app/Model/Chat.php, line 2]
+2014-01-20 04:37:14 Error: [FatalErrorException] Call to undefined function login()
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/c...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 04:37:15 Error: Fatal Error (1): Call to undefined function login() in [/var/www/html/cakephp/app/Model/Chat.php, line 2]
+2014-01-20 04:37:15 Error: [FatalErrorException] Call to undefined function login()
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/c...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 04:41:03 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/html/cakephp/app/View/Users/login.ctp, line 15]
+2014-01-20 04:41:03 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 15, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 15, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 04:41:28 Error: [MissingViewException] View file "/var/www/html/cakephp/app/View/Users/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakephp/app/View/Users/add.ctp',
+)
+Request URL: /cakephp/users/add/6
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 04:45:31 Error: Fatal Error (4): syntax error, unexpected ')', expecting '(' in [/var/www/html/cakephp/app/Controller/UsersController.php, line 35]
+2014-01-20 04:45:31 Error: [FatalErrorException] syntax error, unexpected ')', expecting '('
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 35, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 35, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 04:48:38 Error: [MissingViewException] View file "/var/www/html/cakephp/app/View/Users/regist.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakephp/app/View/Users/regist.ctp',
+)
+Request URL: /cakephp/users/regist/6
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 04:50:26 Error: [MissingViewException] View file "/var/www/html/cakephp/app/View/Users/regist.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakephp/app/View/Users/regist.ctp',
+)
+Request URL: /cakephp/users/regist/6
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-20 05:29:19 Error: [MissingActionException] Action UsersController::style.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'style.css',
+)
+Request URL: /cakephp/users/style.css
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-20 05:29:51 Error: [MissingActionException] Action UsersController::style.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'style.css',
+)
+Request URL: /cakephp/users/style.css
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-20 05:30:54 Error: [MissingActionException] Action UsersController::style.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'style.css',
+)
+Request URL: /cakephp/users/style.css
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-20 05:31:43 Error: [MissingActionException] Action UsersController::style.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'style.css',
+)
+Request URL: /cakephp/users/style.css
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-20 05:32:15 Error: [MissingActionException] Action UsersController::style.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'style.css',
+)
+Request URL: /cakephp/users/style.css
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-20 05:32:18 Error: [MissingActionException] Action UsersController::style.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'style.css',
+)
+Request URL: /cakephp/users/style.css
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-20 05:42:57 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in [/var/www/html/cakephp/app/View/Users/login.ctp, line 13]
+2014-01-20 05:42:57 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 13, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 13, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 05:51:37 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting ',' or ';' in [/var/www/html/cakephp/app/View/Users/login.ctp, line 6]
+2014-01-20 05:51:37 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting ',' or ';'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 6, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 6, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 06:29:28 Error: Fatal Error (1): Call to a member function login() on a non-object in [/var/www/html/cakephp/app/Controller/UsersController.php, line 23]
+2014-01-20 06:29:28 Error: [FatalErrorException] Call to a member function login() on a non-object
+Request URL: /cakephp/users/
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 23, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 23, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 06:30:56 Error: Fatal Error (4): syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$' in [/var/www/html/cakephp/app/Controller/UsersController.php, line 23]
+2014-01-20 06:30:56 Error: [FatalErrorException] syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /cakephp/users
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 06:31:26 Error: Fatal Error (4): syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$' in [/var/www/html/cakephp/app/Controller/UsersController.php, line 23]
+2014-01-20 06:31:26 Error: [FatalErrorException] syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /cakephp/users
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 06:31:29 Error: Fatal Error (4): syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$' in [/var/www/html/cakephp/app/Controller/UsersController.php, line 23]
+2014-01-20 06:31:29 Error: [FatalErrorException] syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /cakephp/users
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 06:32:05 Error: Fatal Error (4): syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$' in [/var/www/html/cakephp/app/Controller/UsersController.php, line 23]
+2014-01-20 06:32:05 Error: [FatalErrorException] syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /cakephp/users
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 06:32:07 Error: Fatal Error (4): syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$' in [/var/www/html/cakephp/app/Controller/UsersController.php, line 23]
+2014-01-20 06:32:07 Error: [FatalErrorException] syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /cakephp/users
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 23, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 07:13:40 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/cakephp/app/View/Users/regist.ctp, line 12]
+2014-01-20 07:13:40 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/users/regist
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 12, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 12, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 07:53:28 Error: Fatal Error (1): Call to undefined function login() in [/var/www/html/cakephp/app/Model/Chat.php, line 2]
+2014-01-20 07:53:28 Error: [FatalErrorException] Call to undefined function login()
+Request URL: /cakephp/Chats
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/c...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/c...', 2, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 08:03:21 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-20 08:08:25 Error: [MissingActionException] Action UsersController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '1',
+)
+Request URL: /cakephp/users/1
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-20 08:10:33 Error: [MissingActionException] Action UsersController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '1',
+)
+Request URL: /cakephp/users/1
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-20 08:10:48 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-20 08:11:06 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-20 08:57:07 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_FUNCTION in [/var/www/html/cakephp/app/Controller/ThreadsController.php, line 10]
+2014-01-20 08:57:07 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_FUNCTION
+Request URL: /cakephp/threads
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 10, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 10, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 08:57:10 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_FUNCTION in [/var/www/html/cakephp/app/Controller/ThreadsController.php, line 10]
+2014-01-20 08:57:10 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_FUNCTION
+Request URL: /cakephp/threads
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 10, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 10, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 08:58:08 Error: Fatal Error (4): syntax error, unexpected ',', expecting ')' in [/var/www/html/cakephp/app/View/Threads/index.ctp, line 10]
+2014-01-20 08:58:08 Error: [FatalErrorException] syntax error, unexpected ',', expecting ')'
+Request URL: /cakephp/threads
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 10, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 10, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 09:01:47 Error: [MissingActionException] Action ThreadsController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'ThreadsController',
+  'action' => 'delete',
+)
+Request URL: /cakephp/threads/delete/1
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-20 09:03:17 Error: Fatal Error (4): syntax error, unexpected '>', expecting T_STRING or T_VARIABLE or '{' or '$' in [/var/www/html/cakephp/app/Controller/ThreadsController.php, line 16]
+2014-01-20 09:03:17 Error: [FatalErrorException] syntax error, unexpected '>', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /cakephp/threads
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 16, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 16, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 09:06:35 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/html/cakephp/app/Controller/ThreadsController.php, line 12]
+2014-01-20 09:06:35 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakephp/threads
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 12, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 12, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 09:17:37 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/index/training%20group
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-20 09:25:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Threads.user' in 'on clause'
+Request URL: /cakephp/threads/index/15
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/html/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/www/html/cakephp/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/www/html/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/www/html/cakephp/lib/Cake/Model/Model.php(2900): DboSource->read(Object(Thread), Array)
+#5 /var/www/html/cakephp/lib/Cake/Model/Model.php(2872): Model->_readDataSource('all', Array)
+#6 /var/www/html/cakephp/app/Controller/ThreadsController.php(18): Model->find('all', Array)
+#7 [internal function]: ThreadsController->index('15')
+#8 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-20 09:43:47 Error: [CakeException] Unknown status code
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(785): CakeResponse->statusCode(15)
+#1 /var/www/html/cakephp/app/Controller/UsersController.php(16): Controller->redirect(Array, 15)
+#2 [internal function]: UsersController->login()
+#3 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-01-20 09:48:02 Error: [MissingActionException] Action ThreadsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'ThreadsController',
+  'action' => 'add',
+)
+Request URL: /cakephp/threads/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-20 09:51:16 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/html/cakephp/app/Controller/ThreadsController.php, line 25]
+2014-01-20 09:51:16 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cakephp/threads/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 25, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 25, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-20 09:51:24 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/index/training%20group
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-20 09:58:34 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/html/cakephp/app/Controller/ThreadsController.php, line 25]
+2014-01-20 09:58:34 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cakephp/threads/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 25, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 25, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 01:36:17 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/html/cakephp/app/Controller/ThreadsController.php, line 25]
+2014-01-21 01:36:17 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cakephp/threads/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 25, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 25, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 01:37:16 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 01:41:10 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 01:41:17 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/cakephp/app/View/Threads/add.ctp, line 16]
+2014-01-21 01:41:17 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/threads/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 16, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 16, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 01:41:40 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 01:44:43 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 01:49:34 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 01:58:30 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp/threads/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/html/cakephp/lib/Cake/View/View.php(818): HelperCollection->__isset('Auth')
+#2 /var/www/html/cakephp/app/View/Threads/add.ctp(16): View->__get('Auth')
+#3 /var/www/html/cakephp/lib/Cake/View/View.php(929): include('/var/www/html/c...')
+#4 /var/www/html/cakephp/lib/Cake/View/View.php(891): View->_evaluate('/var/www/html/c...', Array)
+#5 /var/www/html/cakephp/lib/Cake/View/View.php(460): View->_render('/var/www/html/c...')
+#6 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#7 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#8 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-21 02:01:30 Error: Fatal Error (4): syntax error, unexpected T_OBJECT_OPERATOR in [/var/www/html/cakephp/app/Controller/ThreadsController.php, line 17]
+2014-01-21 02:01:30 Error: [FatalErrorException] syntax error, unexpected T_OBJECT_OPERATOR
+Request URL: /cakephp/threads/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 17, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 17, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 02:02:34 Error: Fatal Error (4): syntax error, unexpected T_OBJECT_OPERATOR, expecting '(' in [/var/www/html/cakephp/app/Controller/ThreadsController.php, line 17]
+2014-01-21 02:02:34 Error: [FatalErrorException] syntax error, unexpected T_OBJECT_OPERATOR, expecting '('
+Request URL: /cakephp/threads/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 17, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 17, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 02:03:00 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/var/www/html/cakephp/app/Controller/ThreadsController.php, line 18]
+2014-01-21 02:03:00 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /cakephp/threads/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 18, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 18, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 02:03:12 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp/threads/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/html/cakephp/lib/Cake/View/View.php(818): HelperCollection->__isset('Auth')
+#2 /var/www/html/cakephp/app/View/Threads/add.ctp(16): View->__get('Auth')
+#3 /var/www/html/cakephp/lib/Cake/View/View.php(929): include('/var/www/html/c...')
+#4 /var/www/html/cakephp/lib/Cake/View/View.php(891): View->_evaluate('/var/www/html/c...', Array)
+#5 /var/www/html/cakephp/lib/Cake/View/View.php(460): View->_render('/var/www/html/c...')
+#6 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#7 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#8 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-21 02:31:33 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 02:43:09 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp/threads/index/19
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/html/cakephp/lib/Cake/View/View.php(818): HelperCollection->__isset('Auth')
+#2 /var/www/html/cakephp/app/View/Threads/index.ctp(14): View->__get('Auth')
+#3 /var/www/html/cakephp/lib/Cake/View/View.php(929): include('/var/www/html/c...')
+#4 /var/www/html/cakephp/lib/Cake/View/View.php(891): View->_evaluate('/var/www/html/c...', Array)
+#5 /var/www/html/cakephp/lib/Cake/View/View.php(460): View->_render('/var/www/html/c...')
+#6 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#7 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#8 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-21 02:56:54 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/cakephp/app/Controller/ThreadsController.php, line 25]
+2014-01-21 02:56:54 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/threads/index
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 25, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 25, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 03:02:50 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/html/cakephp/app/View/Threads/index.ctp, line 8]
+2014-01-21 03:02:50 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakephp/threads/index
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 8, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 8, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 03:06:52 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 03:09:13 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 03:22:34 Error: Fatal Error (4): syntax error, unexpected '{', expecting '(' in [/var/www/html/cakephp/app/Controller/ThreadsController.php, line 64]
+2014-01-21 03:22:34 Error: [FatalErrorException] syntax error, unexpected '{', expecting '('
+Request URL: /cakephp/threads/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 64, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 64, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 03:23:03 Error: [CakeException] $controller does not implement an isAuthorized() method.
+Request URL: /cakephp/threads/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Controller/Component/Auth/BaseAuthorize.php(74): ControllerAuthorize->controller(Object(ThreadsController))
+#1 /var/www/html/cakephp/lib/Cake/Controller/Component/AuthComponent.php(497): BaseAuthorize->__construct(Object(ComponentCollection), Array)
+#2 /var/www/html/cakephp/lib/Cake/Controller/Component/AuthComponent.php(459): AuthComponent->constructAuthorize()
+#3 /var/www/html/cakephp/lib/Cake/Controller/Component/AuthComponent.php(307): AuthComponent->isAuthorized(Array)
+#4 [internal function]: AuthComponent->startup(Object(ThreadsController))
+#5 /var/www/html/cakephp/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /var/www/html/cakephp/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#8 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#10 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-21 03:24:55 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 03:29:05 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/html/cakephp/app/Controller/ThreadsController.php, line 60]
+2014-01-21 03:29:05 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /cakephp/threads/delete/4
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 60)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 60, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 60, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 03:36:00 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/threads/delete/10
+Stack Trace:
+#0 [internal function]: ThreadsController->delete('10')
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 03:37:14 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/threads/delete/10
+Stack Trace:
+#0 [internal function]: ThreadsController->delete('10')
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 03:37:59 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/threads/delete/10
+Stack Trace:
+#0 [internal function]: ThreadsController->delete('10')
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 03:48:54 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/threads/delete/10
+Stack Trace:
+#0 [internal function]: ThreadsController->delete('10')
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 03:48:58 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/threads/delete/1
+Stack Trace:
+#0 [internal function]: ThreadsController->delete('1')
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 03:49:59 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/threads/delete/1
+Stack Trace:
+#0 [internal function]: ThreadsController->delete('1')
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 03:51:57 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/threads/delete/1
+Stack Trace:
+#0 [internal function]: ThreadsController->delete('1')
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 03:52:00 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/threads/delete
+Stack Trace:
+#0 [internal function]: ThreadsController->delete()
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 03:52:13 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/threads/delete/1
+Stack Trace:
+#0 [internal function]: ThreadsController->delete('1')
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 03:55:51 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/threads/delete/10
+Stack Trace:
+#0 [internal function]: ThreadsController->delete('10')
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 04:00:01 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 04:32:48 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 04:32:50 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 04:33:14 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 04:33:51 Error: [MissingControllerException] Controller class MessagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MessagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/messages/index/php%20%20group
+Stack Trace:
+#0 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 04:44:25 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_FUNCTION in [/var/www/html/cakephp/app/Model/Message.php, line 16]
+2014-01-21 04:44:25 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_FUNCTION
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 16, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 16, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 04:48:10 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 50]
+2014-01-21 04:48:10 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 50, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 50, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 05:32:47 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 50]
+2014-01-21 05:32:47 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 50, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 50, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 06:09:23 Error: Fatal Error (4): syntax error, unexpected T_ARRAY in [/var/www/html/cakephp/app/View/Messages/index.ctp, line 17]
+2014-01-21 06:09:23 Error: [FatalErrorException] syntax error, unexpected T_ARRAY
+Request URL: /cakephp/messages/index/12
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 17, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 17, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 06:11:08 Error: Fatal Error (1): Call to a member function delete() on a non-object in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 65]
+2014-01-21 06:11:08 Error: [FatalErrorException] Call to a member function delete() on a non-object
+Request URL: /cakephp/messages/delete/1
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 65)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 65, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 65, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 06:26:05 Error: Fatal Error (1): Call to a member function delete() on a non-object in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 65]
+2014-01-21 06:26:05 Error: [FatalErrorException] Call to a member function delete() on a non-object
+Request URL: /cakephp/messages/delete/1
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 65)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 65, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 65, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 06:38:07 Error: Fatal Error (4): syntax error, unexpected T_OBJECT_OPERATOR in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 22]
+2014-01-21 06:38:07 Error: [FatalErrorException] syntax error, unexpected T_OBJECT_OPERATOR
+Request URL: /cakephp/messages/index/12
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 22, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 22, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 06:38:09 Error: Fatal Error (4): syntax error, unexpected T_OBJECT_OPERATOR in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 22]
+2014-01-21 06:38:09 Error: [FatalErrorException] syntax error, unexpected T_OBJECT_OPERATOR
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 22, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 22, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 06:38:12 Error: Fatal Error (4): syntax error, unexpected T_OBJECT_OPERATOR in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 22]
+2014-01-21 06:38:12 Error: [FatalErrorException] syntax error, unexpected T_OBJECT_OPERATOR
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 22, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 22, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 06:38:47 Error: Fatal Error (4): syntax error, unexpected T_OBJECT_OPERATOR in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 22]
+2014-01-21 06:38:47 Error: [FatalErrorException] syntax error, unexpected T_OBJECT_OPERATOR
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 22, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 22, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 06:39:28 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 55]
+2014-01-21 06:39:28 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /cakephp/messages/add
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 06:42:54 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 56]
+2014-01-21 06:42:54 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakephp/messages/index/12
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 56, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 56, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 06:43:12 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 22]
+2014-01-21 06:43:12 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cakephp/messages/index/12
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 22, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 22, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 06:43:14 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 22]
+2014-01-21 06:43:14 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /cakephp/messages/index/12
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 22, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 22, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 06:47:03 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 55]
+2014-01-21 06:47:03 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /cakephp/messages/add/12
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 06:48:04 Error: [MissingActionException] Action MessagesController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'edit',
+)
+Request URL: /cakephp/messages/edit/4
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 06:48:40 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 55]
+2014-01-21 06:48:40 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /cakephp/messages/add/12
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/c...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/c...', 55, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/c...', 55, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 07:06:23 Error: [MissingViewException] View file "/var/www/html/cakephp/app/View/Messages/edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakephp/app/View/Messages/edit.ctp',
+)
+Request URL: /cakephp/messages/edit/8
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 07:10:46 Error: [NotFoundException] Invalid post
+Request URL: /cakephp/messages/
+Stack Trace:
+#0 [internal function]: MessagesController->index()
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 07:47:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Massage.updated' in 'field list'
+Request URL: /cakephp/messages/index/12
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/html/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/www/html/cakephp/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/www/html/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/www/html/cakephp/lib/Cake/Model/Model.php(2900): DboSource->read(Object(Message), Array)
+#5 /var/www/html/cakephp/lib/Cake/Model/Model.php(2872): Model->_readDataSource('all', Array)
+#6 /var/www/html/cakephp/app/Controller/MessagesController.php(46): Model->find('all', Array)
+#7 [internal function]: MessagesController->index('12')
+#8 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#9 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-21 07:54:29 Error: [NotFoundException] Invalid post
+Request URL: /cakephp/messages/delete/7
+Stack Trace:
+#0 [internal function]: MessagesController->delete('7')
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 07:54:40 Error: [NotFoundException] Invalid post
+Request URL: /cakephp/messages/
+Stack Trace:
+#0 [internal function]: MessagesController->index()
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 07:54:54 Error: [NotFoundException] Invalid post
+Request URL: /cakephp/messages/delete/16/14
+Stack Trace:
+#0 [internal function]: MessagesController->delete('16', '14')
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 07:58:11 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/html/cakephp/app/Controller/MessagesController.php, line 45]
+2014-01-21 07:58:11 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cakephp/messages/edit/19/14
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 45, Array)
+#2 /var/www/html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 45, Array)
+#3 /var/www/html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 08:13:48 Error: [MissingViewException] View file "/var/www/html/cakephp/app/View/Messages/delete_flg.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakephp/app/View/Messages/delete_flg.ctp',
+)
+Request URL: /cakephp/messages/deleteFlg/7/12
+Stack Trace:
+#0 /var/www/html/cakephp/lib/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 08:15:41 Error: [NotFoundException] Invalid post
+Request URL: /cakephp/messages/
+Stack Trace:
+#0 [internal function]: MessagesController->index()
+#1 /var/www/html/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#2 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

@@ -1,0 +1,9 @@
+<h1>Add new thread </h1>
+<p> Hello: <?php echo Session::get('login_user'). " (".$this->HtmlHlp->a('/user/logout',"Logout").")"; ?> </p>
+<p>Fill out below form to add a new thread.</p>
+<?php
+        echo $this->FormHlp->start('/thread/add');
+        echo "Name: ".$this->FormHlp->input('thread')."<br/>";
+        echo $this->FormHlp->button('Create');
+        echo $this->FormHlp->end();
+?>

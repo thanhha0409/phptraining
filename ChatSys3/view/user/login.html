@@ -1,0 +1,16 @@
+<?php
+    if(isset($error)){
+        echo $error['error'];
+    }
+?>
+<h1>Login</h1>
+<p>Enter your username/password to login. Or <a href='/user/regist'>Click here</a> to register new account.</p>
+<?php
+    echo $this->FormHlp->start('/user/login');
+    echo "Username: ".$this->FormHlp->input('username')."<br/>";
+    echo "Password: ".$this->FormHlp->password('password')."<br/>";
+    echo $this->FormHlp->button('Login');
+    echo $this->FormHlp->end();
+?>
+
+
